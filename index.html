@@ -10,7 +10,7 @@
 <body>
   <section class="sec">
     <header>
-    <a href="#"><img src="Pepsi-Logo.png" class="logo"></a>
+    <img src="Pepsi-Logo.png" class="logo">
       <ul>
         <li class="nav"><a href="#">Home</a></li>
         <li class="nav"><a href="#">Products</a></li> 
@@ -21,14 +21,24 @@
   </header> 
   <div class="content">
     <div class="textbox">
-      <h2>That's What<br><span>I like !!</span></h2>
+      <h2>That's What<br><span>I like</span></h2>
       <p>Google Fonts is a free, open-source font library that allows users to easily download and use a wide variety of high-quality fonts in their projects. It is a popular resource for web designers, graphic designers, and anyone looking for stylish and professional-looking fonts</p>
     <a href="#">View All Products</a>
     </div>
     <div class="imgbox">
-      <img src="pepsi001.png">
+      <img src="pepsi001.png" class="pepsi">
     </div>
   </div>
+<ul class="thumb" >
+  <li><img src="pepsi001.png"  onclick="imgSlider('pepsi001.png')"></li>
+  <li><img src="pepsi002.png"  onclick="imgSlider('pepsi002.png')"></li>
+  <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png') "></li>
+</ul>
 </section>
 </body>
 </html>
+<script type="text/javascript">
+  function imgSlider(src){
+    document.querySelector('.pepsi').src=src;
+  }
+</script>
