@@ -5,7 +5,7 @@ body {
     padding:0;
 }
 section{
-  position:relative;
+
   width:100%;
   min-height:100vh;
   padding:10px;
@@ -70,17 +70,39 @@ ul li a:hover{
 p{
   color:white;
   margin-top:0;
+  justify-content:justify;
 }
 .textbox a{
-  color:white;
+  color:blue;
+  background-color:white;
   text-decoration:none;
+  border-radius: 12px;
+  padding:5px;
 }
 .textbox a:hover{
-  border: 1px solid white;
-  padding: 2px;
+  padding: 10px;
+  transform: translateY(-15px);
 }
 span{
   font-weight:1000;
   font-family:Arial;
-  font-size:6rem
+  font-size:6rem;
+}
+.thumb {
+  position:absolute;
+  right:45%;
+  bottom:20px;
+  display:flex;
+}
+.thumb li{
+  display:inline-block;
+  margin: 0 20px;
+  list-style: none;
+  transition: 0.5s; 
+}
+.thumb li:hover{
+ transform: translateY(-15px);
+}
+.thumb li img{
+  max-width:40px;
 }
